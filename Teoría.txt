@@ -1,0 +1,21 @@
+
+	· Aceptar pull request, verificar y subir al directorio MASTER
+	
+		git checkout -b cherinolero-master master
+		git pull https://github.com/cherinolero/cta-ejercicio.git master
+		
+		git checkout master
+		git merge --no-ff cherinolero-master
+		git push origin master
+		
+	· Crear link repositorio, descargar repositorio y hacer MERGE contra MASTER
+	
+		&git remote add <upstream> http://
+		$git pull <upstream> master
+		
+		Opcional: En caso de conflicto
+		
+		Arreglar conflicto
+		$git add .
+		$git commit -m "Conflicto solucionado"
+		$git push origin
